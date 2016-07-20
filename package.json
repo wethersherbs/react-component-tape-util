@@ -1,0 +1,31 @@
+{
+  "name": "react-component-tape-util",
+  "version": "0.0.1",
+  "description": "Tape wrapper to test React components without all of that boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wethersherbs/react-component-tape-util.git"
+  },
+  "keywords": [
+    "react",
+    "testing",
+    "tape",
+    "component"
+  ],
+  "author": "Wethersherbs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wethersherbs/react-component-tape-util/issues"
+  },
+  "homepage": "https://github.com/wethersherbs/react-component-tape-util#readme",
+  "dependencies": {
+    "extend-tape": "^1.2.0",
+    "react-addons-test-utils": "^15.2.1",
+    "tape": "^4.6.0",
+    "tape-jsx-equals": "^1.0.0"
+  }
+}

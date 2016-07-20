@@ -2,7 +2,10 @@
 
 Tape wrapper for testing React components without the boilerplate
 
-### Example
+### Installation
+`npm install react-component-tape-util`
+
+### Usage
 ```js
 import React from 'react'
 import { test, renderJsx } from 'react-component-tape-util'

@@ -1,16 +1,19 @@
-# React Component Tape Util
+# `react-component-tape-util`
 
-Tape wrapper for testing React components without the boilerplate
+A tape wrapper for testing React components.
 
-### Installation
+This package ties together `react-addons-test-utils` and `tape-jsx-equals` for your React testing. The default export is Tape with `jsxEquals()` added to the test object. The `renderJsx` export is a function that will render JSX components that can then
+be checked with the `jsxEquals` test.
+
 `npm install react-component-tape-util`
 
-### Usage
+## Usage
+
 ```js
 import React from 'react'
-import { test, renderJsx } from 'react-component-tape-util'
+import test, { renderJsx } from 'react-component-tape-util'
 
-import HelloWorld from './HelloWorld' // () => <h1>Hello, world!</h1>
+const HelloWorld = () => <h1>Hello, world!</h1>
 
 test('component.HelloWorld', assert => {
   const expected = <h1>Hello, world!</h1>

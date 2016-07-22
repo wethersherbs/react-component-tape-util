@@ -1,8 +1,8 @@
 {
   "name": "react-component-tape-util",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Tape wrapper to test React components without all of that boilerplate",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "babel-node test.js"
   },

@@ -1,4 +1,4 @@
-# `react-component-tape-util`
+# `react-component-tape-util` [![Build Status](https://travis-ci.org/wethersherbs/react-component-tape-util.svg?branch=master)](https://travis-ci.org/wethersherbs/react-component-tape-util)
 
 A tape wrapper for testing React components.
 

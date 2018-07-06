@@ -13,18 +13,25 @@ var _extendTape = require('extend-tape');
 
 var _extendTape2 = _interopRequireDefault(_extendTape);
 
-var _tapeJsxEquals = require('tape-jsx-equals');
+var _shallow = require('react-test-renderer/shallow');
 
-var _tapeJsxEquals2 = _interopRequireDefault(_tapeJsxEquals);
+var _shallow2 = _interopRequireDefault(_shallow);
 
-var _reactAddonsTestUtils = require('react-addons-test-utils');
+var _reactElementToJsxString = require('react-element-to-jsx-string');
+
+var _reactElementToJsxString2 = _interopRequireDefault(_reactElementToJsxString);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = (0, _extendTape2.default)(_tape2.default, { jsxEquals: _tapeJsxEquals2.default });
-const renderJsx = exports.renderJsx = component => {
-  const renderer = (0, _reactAddonsTestUtils.createRenderer)();
+var jsxEquals = function jsxEquals(element1, element2, message) {
+  this.equals((0, _reactElementToJsxString2.default)(element1), (0, _reactElementToJsxString2.default)(element2), message);
+};
+
+exports.default = (0, _extendTape2.default)(_tape2.default, { jsxEquals: jsxEquals });
+var renderJsx = exports.renderJsx = function renderJsx(component) {
+  var renderer = new _shallow2.default();
   renderer.render(component);
+
   return renderer.getRenderOutput();
 };
 
